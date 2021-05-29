@@ -1,0 +1,19 @@
+<script>
+	var ar = [1,0,0,1,1,1,1,0,1];
+	    var current = 0;
+    var max = 0;
+    {
+    for(var i = 0; i < ar.length; i++){
+    if(ar[i] == 0){
+      current = 0;
+    }
+    else{
+     current++;
+     if(current > max){
+     	max = current;
+      }
+     }
+    }
+    document.writeln("maximum consecutive: " + max);
+    }
+</script>

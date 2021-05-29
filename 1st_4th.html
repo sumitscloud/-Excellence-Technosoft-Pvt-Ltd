@@ -1,0 +1,22 @@
+<html>
+<head> </head>
+<body>
+<form
+name="form"
+onsubmit="return emptyValidation()"
+required
+>
+Name: <input type="text" id="firstName" />
+<input type="checkbox" name= "checkme"/><input type="submit" value="Submit" />
+</form>
+<script>
+function emptyValidation() {
+var formField = document.forms["form"]["firstName"].value;
+if (formField == "" || !form.checkme.checked ) {
+alert("checbox is unchecked or First Name is empty");
+return false;
+}
+    }
+</script>
+</body>
+</html>
